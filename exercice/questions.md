@@ -114,3 +114,39 @@
 **Indices** :
 - Utilisez `groupby` pour regrouper les données par mois.
 - Utilisez `matplotlib` pour créer un graphique à barres groupées.
+
+
+# Exercice d'Analyse Avancée de Données avec Python
+
+## Question 1 : Déterminer le nombre optimal de catégories pour l'âge
+
+**Objectif** : Utiliser l'Analyse en Composantes Principales (ACP) et la Classification Ascendante Hiérarchique (CAH) pour déterminer le nombre optimal de catégories pour l'âge des victimes et des mis en cause.
+
+**Tâche** : Appliquez l'ACP et la CAH sur les données d'âge des victimes et des mis en cause pour déterminer le nombre optimal de catégories.
+
+**Indices** :
+- Utilisez `StandardScaler` pour normaliser les données avant l'ACP.
+- Utilisez `PCA` de `sklearn.decomposition` pour l'Analyse en Composantes Principales.
+- Utilisez `linkage` et `dendrogram` de `scipy.cluster.hierarchy` pour la Classification Ascendante Hiérarchique.
+
+## Question 2 : Regrouper les victimes par âge en utilisant k-NN
+
+**Objectif** : Regrouper les victimes en catégories d'âge en utilisant la méthode des k-plus proches voisins (k-NN).
+
+**Tâche** : Ajoutez une colonne `categorie_age_knn` au DataFrame des victimes en utilisant l'algorithme k-NN pour regrouper les âges.
+
+**Indices** :
+- Utilisez `KMeans` de `sklearn.cluster` pour déterminer les catégories d'âge.
+- Ajoutez les résultats comme une nouvelle colonne dans le DataFrame des victimes.
+- Sauvegardez les résultats dans un fichier Parquet.
+
+## Question 3 : Prédire le nombre de victimes par département pour les années à venir
+
+**Objectif** : Utiliser un modèle de séries temporelles pour prédire le nombre de victimes et les départements concernés pour les années à venir.
+
+**Tâche** : Prédisez le nombre de victimes pour les 5 prochaines années et identifiez les départements concernés.
+
+**Indices** :
+- Utilisez `ARIMA` de `statsmodels.tsa.arima.model` pour la prédiction des séries temporelles.
+- Regroupez les données par année et département avant d'appliquer le modèle.
+- Utilisez `forecast` pour prédire les valeurs futures.
