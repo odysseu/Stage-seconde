@@ -150,3 +150,53 @@
 - Utilisez `ARIMA` de `statsmodels.tsa.arima.model` pour la prédiction des séries temporelles.
 - Regroupez les données par année et département avant d'appliquer le modèle.
 - Utilisez `forecast` pour prédire les valeurs futures.
+
+# Exercice d'Analyse de Données de Décisions de Justice
+
+## Question 1 : Lire et afficher les premières décisions
+
+**Objectif** : Lire le fichier JSON et afficher les premières décisions.
+
+**Tâche** : Écrivez un script Python pour lire le fichier JSON et afficher les cinq premières décisions.
+
+**Indices** :
+- Utilisez la bibliothèque `json` pour lire le fichier JSON.
+- Utilisez `pandas` pour convertir les données en DataFrame et afficher les premières lignes.
+
+## Question 2 : Statistiques descriptives
+
+**Objectif** : Calculer des statistiques descriptives sur les décisions.
+
+**Tâche** : Calculez et affichez des statistiques descriptives pour les décisions, telles que le nombre total de décisions, le nombre de types de recours uniques, etc.
+
+**Indices** :
+- Utilisez la méthode `describe()` de `pandas` pour obtenir des statistiques descriptives.
+- Utilisez `value_counts()` pour compter les occurrences uniques de certaines colonnes.
+
+## Question 3 : Compter les décisions par type de recours
+
+**Objectif** : Compter le nombre de décisions par type de recours.
+
+**Tâche** : Écrivez un script pour compter et afficher le nombre de décisions pour chaque type de recours.
+
+**Indices** :
+- Utilisez `value_counts()` sur la colonne appropriée pour compter les occurrences de chaque type de recours.
+
+## Question 4 : Compter les décisions par année
+
+**Objectif** : Compter le nombre de décisions par année.
+
+**Tâche** : Écrivez un script pour compter et afficher le nombre de décisions pour chaque année.
+
+**Indices** :
+- Convertissez la colonne de date en type datetime.
+- Utilisez `dt.year` pour extraire l'année et `value_counts()` pour compter les occurrences par année.
+
+## Question 5 : Analyser les solutions des décisions
+
+**Objectif** : Analyser les solutions des décisions.
+
+**Tâche** : Écrivez un script pour compter et afficher le nombre de décisions pour chaque solution.
+
+**Indices** :
+- Utilisez `value_counts()` sur la colonne des solutions pour compter les occurrences de chaque solution.
